@@ -1,6 +1,7 @@
 # Работа выполнена студентом Московского Университета Имени Витте (МУИВ)
 # Санчес-Перес Сергеем Е.
 # ВАРИАНТ - 17
+
 import os
 import cmath
 # Без модуля 'os' открытие файлов почему-то не работает, но известно, что можно обойтись без 'os'
@@ -14,7 +15,7 @@ opennedResultFile = open(GET_RESULT_FILE, 'w', encoding=UTF_8)
 sourceDataNums = opennedSourceDataFile.read().replace('x=', '').split('\n')
 # Функция, вычисляющая Y
 def calculateY(x):
-    # Не забываем приобразовать в int
+    # Не забываем преобразовать в int
     x = int(x)
     if x < -4:
         return ((16 * x ** 6 - 6 * x ** 2 - 22) ** 6) + 23 * x ** 3 / ((34 * x ** 5 + x ** 3) ** 5 + (18 * x ** 2 + 70) ** 4)
