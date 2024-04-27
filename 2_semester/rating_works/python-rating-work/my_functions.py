@@ -27,7 +27,7 @@ def removeElementFromString(strOrigin: str, strElemToRemove: str) -> str:
     return res
 
 # -Кастомный split()
-def customSplit(strOrigin: str, delimiters: str = ' \t\n'):
+def customSplit(strOrigin: str, delimiters: str):
     res: list = []
     word: str = ""
     for c in strOrigin:
