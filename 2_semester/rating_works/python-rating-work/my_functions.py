@@ -27,12 +27,12 @@ def removeElementFromString(strOrigin: str, strElemToRemove: str) -> str:
     return res
 
 # -Кастомный split()
-def customSplit(strOrigin: str, delimiters: str):
+def customSplit(strOrigin: str, delimiters: str) -> List[str]:
     res: list = []
     word: str = ""
-    for c in strOrigin:
-        if c not in delimiters:
-            word += c
+    for character in strOrigin:
+        if character not in delimiters:
+            word += character
         elif word:
             res.append(word)
             word = ""
