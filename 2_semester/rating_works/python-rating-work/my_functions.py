@@ -1,6 +1,6 @@
 # Работа выполнена студентом 1-го курса группы "о.ИЗДтс 23.1/Б3-23" университета МУИВ
 # Санчес-Перес Сергеем Евгеньевичем
-# 😸 Мой GitHub 😸 - https://github.com/sanchexas
+# Мой GitHub - https://github.com/sanchexas
 
 import math
 import random
@@ -52,7 +52,6 @@ def isEven(n: int) -> bool:
 # -Алгоритм "быстрой сортировки" (Хоара)
 # --order (порядок) : true - по возрастанию, false - по убыванию
 # TODO Как-то можно оптимизировать данную функцию в плане условия с порядком (if order), но мне лень...
-
 def quickSort(numsArray: List[int], order: bool) -> List[int]:
     if len(numsArray) <= 1:
         return numsArray
@@ -82,7 +81,6 @@ def quickSort(numsArray: List[int], order: bool) -> List[int]:
 # -Алгоритм сортировки по методу "пузырька"
 # --order (порядок) : true - по возрастанию, false - по убыванию
 # TODO Как-то можно оптимизировать данную функцию в плане условия с порядком (if order), но мне лень...
-
 def bubbleSort(numsArray: List[int], order: bool) -> List[int]:
     n = len(numsArray)
     if(order):
@@ -99,7 +97,7 @@ def bubbleSort(numsArray: List[int], order: bool) -> List[int]:
 
 # -Формирование набора данных из кодов Юникода
 def getUnicodeDataArray(strOrigin: str) -> List[int]:
-    arr: list = list(removeElementFromString(strOrigin, " "))
+    arr: list = list(strOrigin)
     res: list = []
     for character in arr:
         res.append(ord(character))

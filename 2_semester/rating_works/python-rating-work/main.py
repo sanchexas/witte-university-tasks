@@ -1,6 +1,6 @@
 # Работа выполнена студентом 1-го курса группы "о.ИЗДтс 23.1/Б3-23" университета МУИВ
 # Санчес-Перес Сергеем Евгеньевичем
-# 😸 Мой GitHub 😸 - https://github.com/sanchexas
+# Мой GitHub - https://github.com/sanchexas
 
 # -Кастомные функции
 from my_functions import *
@@ -24,7 +24,7 @@ dataList: List[int] = getUnicodeDataArray(removedSpacesFromFio)
 unSortedDataList: List[int] = dataList[:]
 # -Проверка на то, является ли результат деления ID на длину ФИО четным
 isDevideResultEven: bool = isEven(devideIdByFioResult)
-# -Алгоритм "быстрой сортировки" (Хоара)
+# -Алгоритм "быстрой сортировки" (Хоара) 
 quickSortResult: List[int] = quickSort(dataList, isDevideResultEven)
 # -Алгоритм сортировки по методу "пузырька"
 bubbleSortResult: List[int] = bubbleSort(dataList, isDevideResultEven)
